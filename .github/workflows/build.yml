@@ -7,6 +7,11 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - name: Extrair o ZIP do projeto
+        run: |
+          ZIP=$(ls *.zip | head -n 1)
+          echo "Extraindo $ZIP"
+          unzip -q -o "$ZIP"
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
