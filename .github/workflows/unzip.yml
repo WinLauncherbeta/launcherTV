@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          unzip -o *.zip -d tmp
+          unzip -o *.zip -x '.github/*' -d tmp
           if [ "$(ls tmp | wc -l)" -eq 1 ] && [ -d "tmp/$(ls tmp)" ]; then
             cp -a tmp/*/. .
           else
