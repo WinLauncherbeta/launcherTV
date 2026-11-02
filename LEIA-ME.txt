@@ -1,0 +1,20 @@
+MEU LAUNCHER (Android TV) - projeto v0.1
+
+COMO GERAR O APK NO GITHUB
+1) Crie um repositório novo no GitHub.
+2) Suba este ZIP no repositório (Add file > Upload files). Pode subir o .zip sem extrair.
+3) Crie o arquivo do workflow: Add file > Create new file, nome:
+      .github/workflows/build.yml
+   e cole o conteúdo do arquivo build.yml (vai junto com este ZIP). Clique em Commit.
+   (Se você extraiu o ZIP no PC e subiu a pasta .github junto, pode pular este passo.)
+4) Abra a aba Actions > "Build APK". Espere ficar verde (3 a 6 minutos).
+   Se não iniciar sozinho: Run workflow.
+5) Clique na execução > role até "Artifacts" > baixe MeuLauncher-APK (vem um .zip com o app-debug.apk).
+6) Instale na TV (pendrive, ADB ou app tipo "Send Files to TV").
+
+COMO USAR
+- Segure OK em um app (em "Todos os apps") para fixar/remover do dock.
+- Segure OK em um ícone do dock para remover.
+- Botão MENU do controle abre as Configurações.
+- Configurações: papel de parede (vídeo 1, vídeo 2, imagem), tamanho dos ícones,
+  relógio 12/24h, cidade do clima, monitor de RAM/CPU, modo economia, otimizar memória.
